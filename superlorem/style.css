@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --fundo-neutro: rgb(250, 250, 250);
+    --fundo-neutro-escurecido: rgb(240, 240, 240);
+    --fundo-colorido: rgb(61, 135, 62);
+
+    --cor-letra-neutro: rgb(24, 32, 26);
+    --cor-letra-neutro-discreto: rgb(139, 155, 144);
+    --cor-letra-colorido: rgb(250, 250, 250);
+
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--cor-letra-neutro);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.site-container {
+    background: var(--fundo-neutro);
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.site-container>header {
+    background-color: var(--fundo-colorido);
+    color: var(--cor-letra-colorido);
+    background-image: url(topo-bg.webp);
+    background-position: center;
+    background-size: cover;
+
+    min-height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 0 0 0 3em;
+}
+
+.site-container>header h1 {
+    flex-grow: 7;
+}
+
+.site-container>header * {
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+}
+
+.logo-big {
+    font-size: 3em;
+}
+
+.site-container>section {
+    flex-grow: 1;
+    max-width: 90%;
+    align-self: center;
+
+    display: flex;
+    gap: 2em;
+}
+
+main {
+    padding: 2em;
+    line-height: 1.75;
+}
+
+p.lead {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+p.destacado {
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+p.discreto {
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 1em;
+}
+
+.inscricao-container {
+    flex-basis: 300px;
+    flex-shrink: 0;
+
+    position: relative;
+    top: -75px;
+
+    margin-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inscricao-container>* {
+    border: 2px solid var(--fundo-colorido);
+    padding: 1em;
+}
+
+.inscricao-container>header {
+    background: var(--fundo-colorido);
+    color: var(--cor-letra-colorido);
+
+    flex-basis: 100px;
+
+    border-width: 0;
+    border-radius: 10px 10px 0 0;
+
+    text-align: center;
+}
+
+.inscricao-container>header h2 {
+    line-height: 1.25;
+    margin: 0.75em;
+}
+
+.inscricao-container>header p {
+    font-size: 0.75em;
+}
+
+.inscricao-container form {
+    flex-grow: 1;
+
+    border-width: 0 2px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.inscricao-container form>* {
+    padding: 0.3em;
+}
+
+.inscricao-container>footer {
+    border-top-width: 0;
+    border-radius: 0 0 10px 10px;
+
+    font-size: 0.75em;
+    color: var(--cor-letra-neutro-discreto);
+    text-align: center;
+}
+
+.inscricao-container input,
+.inscricao-container select,
+.inscricao-container button {
+    margin: 0.2em;
+    padding: 0.6em;
+    outline: none;
+    border: 1px solid var(--fundo-colorido);
+    border-radius: 3px;
+    background-color: var(--fundo-neutro-escurecido);
+}
+
+.inscricao-container form>label:not(:first-child) {
+    margin-top: 0.5em;
+}
+
+#iniciar-teste {
+    margin: 2em 2em 0 2em;
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    background-color: var(--fundo-colorido);
+    color: var(--cor-letra-colorido);
+}
+
+.site-container>footer {
+    background: var(--fundo-colorido);
+    color: var(--cor-letra-colorido);
+
+    font-size: 0.75em;
+    text-align: center;
+    padding: 2em;
+}
+
+.site-container>footer .logo {
+    font-size: 2em;
+    margin: 0.5em;
+}
+
+sub,
+sup {
+    font-size: 0.6em;
+}
