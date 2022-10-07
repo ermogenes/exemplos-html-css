@@ -2,79 +2,111 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EVA</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
     <div id="principal">
+
         <header>
             <div class="limite">eva</div>
         </header>
+
         <section class="jumbo">
             <div class="limite">
-                <header>Kit para derrotar a <em>sazonalidade</em> nas academias</header>
+                <header>
+                    Kit para derrotar a <em>sazonalidade</em> nas academias
+                </header>
                 <section>
                     <div class="iconografia">
                         <div>
-                            <div class="bola"><img src="megafone.webp" alt=""></div>
+                            <div class="bola"><img src="megafone.webp" alt="" /></div>
                             <span>Modelos prontos de campanha</span>
                         </div>
                         <div>
-                            <div class="bola balao"><img src="sms.webp" alt=""></div>
+                            <div class="bola balao"><img src="sms.webp" alt="" /></div>
                             <span>Webinar com Adolpho Berezin</span>
                         </div>
                         <div>
-                            <div class="bola"><img src="contrato.webp" alt=""></div>
+                            <div class="bola"><img src="contrato.webp" alt="" /></div>
                             <span>Ebook com dicas</span>
                         </div>
                     </div>
-                    <div class="texto">Dicas e ferramentas para sua academia, estúdio ou box LUCRAR mesmo no período de
-                        baixa.</div>
+                    <div class="texto">
+                        Dicas e ferramentas para sua academia, estúdio ou box LUCRAR mesmo
+                        no período de baixa.
+                    </div>
                 </section>
             </div>
         </section>
+
         <main>
             <div class="limite conteudo">
-                <section>
-                    <p>O frio e as férias de meio de ano estão chegando e se você não ainda não começou a preparar sua
-                        academia para isso, é bom correr!</p>
+                <section class="descritivo">
+                    <p>
+                        O frio e as férias de meio de ano estão chegando e se você não
+                        ainda não começou a preparar sua academia para isso, é bom correr!
+                    </p>
                     <p><strong>Mas você não está sozinho!</strong></p>
-                    <p>Preparamos um Kit completo para te ajudar a não deixar o movimento diminuir no seu negócio e
-                        ainda conseguir <em>LUCRAR</em> mais neste período. Com este kit você vai:</p>
+                    <p>
+                        Preparamos um Kit completo para te ajudar a não deixar o movimento
+                        diminuir no seu negócio e ainda conseguir <em>LUCRAR</em> mais
+                        neste período. Com este kit você vai:
+                    </p>
                     <ul>
-                        <li>Aprender ações práticas para manter o movimento na academia nos períodos de baixa;</li>
+                        <li>
+                            Aprender ações práticas para manter o movimento na academia nos
+                            períodos de baixa;
+                        </li>
                         <li>Ter condições de executar campanhas bem estruturadas;</li>
-                        <li>Descobrir que é possível lucrar nas épocas mais difíceis do ano;</li>
+                        <li>
+                            Descobrir que é possível lucrar nas épocas mais difíceis do ano;
+                        </li>
                         <li>E muito mais!</li>
                     </ul>
                     <p>
                         <strong>
-                            <em>Preencha agora o formulário</em>
-                            acima e baixe o KIT!
+                            <em>Preencha agora o formulário</em> acima e baixe o KIT!
                         </strong>
                     </p>
                 </section>
+
                 <section>
                     <form>
                         <header>Preencha o formulário para receber o Kit</header>
 
-                        <label for="">Nome<sup>*</sup></label><input type="text">
-                        <label for="">Email<sup>*</sup></label><input type="text">
-                        <label for="">Telefone<sup>*</sup></label><input type="text">
-                        <label for="">Cargo<sup>*</sup></label><select name="" id=""></select>
-                        <label for="">2+2=?<sup>*</sup></label><input type="text">
+                        <label for="nome">Nome<sup>*</sup></label><input type="text" name="nome" id="nome" required />
+                        <label for="email">Email<sup>*</sup></label><input type="email" name="email" id="email"
+                            required />
+                        <label for="telefone">Telefone<sup>*</sup></label><input type="tel" name="telefone"
+                            id="telefone" required />
+                        <label for="cargo">Cargo<sup>*</sup></label><select name="cargo" id="cargo" required>
+                            <option value="" selected></option>
+                            <option>---</option>
+                            <option value="1">Cargo 1</option>
+                            <option value="2">Cargo 2</option>
+                            <option value="3">Cargo 3</option>
+                            <option value="4">Cargo 4</option>
+                        </select>
+                        <label for="desafio">2+2=?<sup>*</sup></label><input type="number" name="desafio" id="desafio"
+                            required />
                         <button>Baixar kit grátis agora!</button>
                     </form>
                 </section>
             </div>
         </main>
+
         <footer>
-            <div class="limite">um produto eteab</div>
+            <div class="limite">
+                um produto <span class="invertido">ete</span><span class="pesado">ab</span>
+            </div>
         </footer>
+
     </div>
 </body>
 
